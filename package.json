@@ -1,0 +1,44 @@
+{
+  "name": "reiterar",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "watch": "webpack -w --mode development",
+    "prod": "webpack --mode production"
+  },
+  "keywords": [
+    "theme"
+  ],
+  "author": "Johnny Dev",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "add": "^2.0.6",
+    "bootstrap": "^4.3.1",
+    "custom": "^0.0.0",
+    "jquery": "^3.4.1",
+    "jquery-parallax.js": "^1.5.0",
+    "popper.js": "^1.15.0",
+    "scrollreveal": "^4.0.5",
+    "webpack": "^4.41.0",
+    "webpack-dev-server": "^3.8.2",
+    "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "uglify-js": "^3.6.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack-cli": "^3.3.9"
+  }
+}

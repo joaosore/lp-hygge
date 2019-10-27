@@ -1,0 +1,29 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./global/fonts.scss";
+
+@import "./scss/header.scss";
+@import "./scss/inicial.scss";
+@import "./scss/hygge.scss";
+@import "./scss/funciona.scss";
+@import "./scss/antecipe.scss";
+
+@import "./scss/components/button.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Circular Std";
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+@media screen and (max-width: 1330px) {
+  body {
+    font-size: 14px;
+  }
+}

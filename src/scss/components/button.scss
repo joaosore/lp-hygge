@@ -1,0 +1,46 @@
+.btn-fale {
+  outline: none;
+  border-radius: 4px;
+  background-color: #0064de;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 262px;
+  width: 100%;
+  transition: all 350ms ease-in-out;
+  &:hover {
+    background-color: #016ff5;
+  }
+  span {
+    font-family: "IBM Plex Sans";
+    font-size: 1em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &:after {
+      content: "";
+      background-image: url(./imgs/seta-right.svg);
+      width: 25px;
+      height: 12px;
+      display: block;
+      position: relative;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .btn-fale {
+    margin: auto;
+  }
+}

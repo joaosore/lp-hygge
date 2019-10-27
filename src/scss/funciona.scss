@@ -1,0 +1,109 @@
+#funciona {
+  position: relative;
+  min-height: 800px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background-color: #161f36;
+  .mask {
+    &:before {
+      content: "";
+      background-color: #0064de;
+      -webkit-mask-image: url(./imgs/circulos.svg);
+      mask-image: url(./imgs/circulos.svg);
+      position: absolute;
+      bottom: 527px;
+      transform: rotateZ(90deg);
+      width: 83px;
+      height: 235px;
+      -webkit-mask-repeat: no-repeat;
+      right: 410px;
+    }
+    img {
+      position: absolute;
+      max-width: 645px;
+      right: 0;
+      bottom: -80px;
+    }
+  }
+
+  span {
+    &.title {
+      font-family: "IBM Plex Sans";
+      font-size: 0.875em;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.06;
+      letter-spacing: normal;
+      color: #0064de;
+      text-transform: uppercase;
+    }
+  }
+  h2 {
+    margin-top: 32px;
+    font-family: "IBM Plex Sans";
+    font-size: 2em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #fff;
+    max-width: 406px;
+    margin-bottom: 32px;
+  }
+  p {
+    font-family: "Yrsa";
+    font-size: 1.25em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #8b9cc4;
+    margin-bottom: 72px;
+    max-width: 486px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #funciona {
+    .mask {
+      &:before {
+        bottom: 420px;
+        right: 374px;
+      }
+      img {
+        max-width: 546px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #funciona {
+    height: auto;
+    padding: 30px 0;
+    .mask {
+      display: none;
+    }
+    h2 {
+      font-size: 1.75em;
+      line-height: 1.2;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 32px;
+      margin-top: 32px;
+    }
+    p {
+      font-size: 1em;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      &:first-child {
+        margin-top: 32px;
+      }
+    }
+  }
+}

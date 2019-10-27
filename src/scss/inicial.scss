@@ -1,0 +1,65 @@
+#inicial {
+  min-height: 600px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(./imgs/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    background-color: #fff;
+    -webkit-mask-image: url(./imgs/circulos.svg);
+    mask-image: url(./imgs/circulos.svg);
+    position: absolute;
+    bottom: 180px;
+    width: 92px;
+    height: 140px;
+    -webkit-mask-repeat: no-repeat;
+    right: 0;
+  }
+  h1 {
+    font-family: "IBM Plex Sans";
+    font-size: 3em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  p {
+    font-family: "Yrsa";
+    font-size: 1.25em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-bottom: 72px;
+    max-width: 361px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #inicial {
+    &:after {
+      display: none;
+    }
+    h1 {
+      font-size: 2em;
+      line-height: 1.2;
+      text-align: center;
+    }
+    p {
+      font-size: 1em;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
