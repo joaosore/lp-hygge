@@ -1,0 +1,84 @@
+.acordion {
+  .box {
+    margin-bottom: 24px;
+    &:last-child {
+      margin: 0;
+    }
+    &.active {
+      .title {
+        &:after {
+          transform: rotateZ(0);
+        }
+      }
+      .text {
+        max-height: 1000px;
+        padding: 32px;
+      }
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #e5effb;
+      padding: 23px 30px;
+      &:after {
+        content: "";
+        background-image: url("./imgs/seta-acordion.svg");
+        width: 20px;
+        height: 10px;
+        display: block;
+        transition: all 350ms ease-in-out;
+        transform: rotateZ(180deg);
+        min-width: 20px;
+      }
+      span {
+        font-family: "IBM Plex Sans";
+        font-size: 1.125em;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #050f28;
+      }
+    }
+    .text {
+      border: solid 1px #f8f8f8;
+      max-height: 0;
+      padding-left: 32px;
+      padding-right: 32px;
+      overflow: hidden;
+      transition: all 350ms ease-in-out;
+      p {
+        margin: auto !important;
+        max-width: initial !important;
+        opacity: 0.5 !important;
+        font-family: "Yrsa" !important;
+        font-size: 16px !important;
+        font-weight: normal !important;
+        font-stretch: normal !important;
+        font-style: normal !important;
+        line-height: 1.5 !important;
+        letter-spacing: normal !important;
+        color: #050f28 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .acordion {
+    .box {
+      &.active {
+        .text {
+          max-height: 1000px;
+          padding: 15px;
+        }
+      }
+      .text {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}

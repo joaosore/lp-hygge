@@ -1,0 +1,92 @@
+#vantagens {
+  background-color: #fff;
+  position: relative;
+  min-height: 800px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &:after {
+    content: "";
+    background-color: #8b9cc4;
+    -webkit-mask-image: url(./imgs/circulos.svg);
+    mask-image: url(./imgs/circulos.svg);
+    position: absolute;
+    bottom: 180px;
+    width: 92px;
+    height: 140px;
+    -webkit-mask-repeat: no-repeat;
+    right: 0;
+  }
+  .title {
+    font-family: "IBM Plex Sans";
+    font-size: 0.875em;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0064de;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2 {
+    max-width: 688px;
+    font-family: "IBM Plex Sans";
+    font-size: 2.5em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: #161f36;
+    margin: auto;
+    margin-bottom: 56px;
+  }
+  .box-vantagens {
+    border-radius: 4px;
+    background-color: #e5effb;
+    padding: 56px 39px;
+    height: 100%;
+    .box-img {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 40px;
+    }
+    h3 {
+      font-family: "IBM Plex Sans";
+      font-size: 18px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #161f36;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: "Yrsa";
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.35;
+      letter-spacing: normal;
+      color: rgba(22, 31, 54, 0.5);
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #vantagens {
+    height: auto;
+    padding: 30px 0;
+    .box {
+      margin-bottom: 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

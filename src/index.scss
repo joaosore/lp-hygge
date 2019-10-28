@@ -1,4 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+
 @import "./global/fonts.scss";
 
 @import "./scss/header.scss";
@@ -6,8 +8,13 @@
 @import "./scss/hygge.scss";
 @import "./scss/funciona.scss";
 @import "./scss/antecipe.scss";
+@import "./scss/vantagens.scss";
+@import "./scss/o-que-dizem-nossos-parceiros-e-clientes.scss";
+@import "./scss/perguntas-frequentes.scss";
 
 @import "./scss/components/button.scss";
+@import "./scss/components/carousel.scss";
+@import "./scss/components/acordion.scss";
 
 * {
   margin: 0;

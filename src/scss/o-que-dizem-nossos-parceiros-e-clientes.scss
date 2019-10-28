@@ -1,0 +1,111 @@
+#o-que-dizem-nossos-parceiros-e-clientes {
+  position: relative;
+  min-height: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #e5effb;
+  padding: 120px 0;
+  .box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-family: "IBM Plex Sans";
+    font-size: 2.5em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #050f28;
+    margin: auto;
+    margin-bottom: 24px;
+    max-width: 439px;
+  }
+  p {
+    font-family: "Yrsa";
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: center;
+    max-width: 414px;
+    color: rgba(5, 15, 40, 0.5);
+    margin: auto;
+    margin-bottom: 66px;
+  }
+  .box {
+    h3 {
+      font-family: "Yrsa";
+      font-size: 2em;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      color: #050f28;
+      margin: auto;
+      max-width: 688px;
+      margin-bottom: 69px;
+      b {
+        font-weight: 600;
+      }
+    }
+    .card-comentario {
+      position: relative;
+      padding: 24px 15px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      max-width: 361px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto;
+      &:before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        transform: rotate(-315deg);
+        border-radius: 4px;
+        background-color: #ffffff;
+        position: absolute;
+        top: -5px;
+      }
+      h5 {
+        font-family: "IBM Plex Sans";
+        font-size: 1.125em;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #050f28;
+      }
+      p {
+        opacity: 0.5;
+        font-family: "IBM Plex Sans";
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #050f28;
+        margin: auto;
+        margin-bottom: 8px;
+      }
+      .stars {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
