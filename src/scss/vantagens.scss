@@ -82,6 +82,9 @@
   #vantagens {
     height: auto;
     padding: 30px 0;
+    &:after {
+      display: none;
+    }
     .box {
       margin-bottom: 30px;
       &:last-child {
