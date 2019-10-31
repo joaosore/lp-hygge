@@ -89,10 +89,6 @@ function change_menu() {
   var fale_conosco_top = $($("#fale-conosco")).offset().top;
   var fale_conosco_bottom = fale_conosco_top + $("#fale-conosco").height() - i;
 
-  console.log(scroll);
-  console.log(inicial_top);
-  console.log(inicial_bottom);
-
   if (scroll >= inicial_top && scroll < inicial_bottom) {
     $("a")
       .parent()
