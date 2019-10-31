@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-around;
     button {
+      outline: none;
       pointer-events: all;
       cursor: pointer;
       &.owl-prev {

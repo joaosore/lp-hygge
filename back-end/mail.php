@@ -14,7 +14,7 @@ if($_POST) {
 	$email = new \SendGrid\Mail\Mail(); 
 	$email->setFrom("contato@hygge.com.br", "Contato");
 	$email->setSubject("Contato via Site");
-	$email->addTo("atendimento@hyggesec.com.br");
+	$email->addTo("contato@hyggesec.com.br");
 	$email->addBcc("jaumcj@gmail.com");
 	$email->addContent(
 		"text/html", "
