@@ -7,12 +7,47 @@ header {
   &.scroll {
     background-color: #161f36;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    .navbar {
+      .navbar-collapse {
+        .navbar-nav {
+          &.menu-principal {
+          }
+          &.menu-secundario {
+            transition: all 350ms ease-in-out;
+            a {
+            }
+            .phone-before {
+              &.contato {
+                &:before {
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+          .nav-item {
+            a {
+              &.contato {
+                color: #fff;
+              }
+            }
+            &.active {
+              a {
+                &.contato {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .navbar-brand {
     display: flex;
     align-items: center;
     justify-content: center;
     object {
+      max-width: 145px;
       pointer-events: none;
     }
   }
@@ -28,7 +63,7 @@ header {
       .navbar-nav {
         &.menu-principal {
           flex: 1;
-          max-width: 525px;
+          max-width: 650px;
           display: flex;
           align-items: center;
           justify-content: space-around;
@@ -46,9 +81,16 @@ header {
             display: flex;
           }
           .phone-before {
+            &.contato {
+              &:before {
+                background-color: #0a1949;
+              }
+            }
             &:before {
               content: "";
-              background-image: url(./imgs/phone.svg);
+              background-color: #fff;
+              -webkit-mask-image: url(./imgs/phone.svg);
+              mask-image: url(./imgs/phone.svg);
               width: 16px;
               height: 16px;
               display: block;
@@ -83,6 +125,9 @@ header {
             color: #fff;
             transition: all 350ms ease-in-out;
             padding: 0;
+            &.contato {
+              color: #06012e;
+            }
             &:hover {
               color: #fff;
               font-weight: 800;
@@ -92,6 +137,9 @@ header {
             a {
               color: #fff;
               font-weight: 800;
+              &.contato {
+                color: #06012e;
+              }
             }
           }
         }
@@ -242,6 +290,40 @@ header {
         padding: 15px;
         &.active {
           transform: translateX(0);
+        }
+      }
+    }
+    .navbar {
+      .navbar-collapse {
+        .navbar-nav {
+          &.menu-principal {
+          }
+          &.menu-secundario {
+            transition: all 350ms ease-in-out;
+            a {
+            }
+            .phone-before {
+              &.contato {
+                &:before {
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+          .nav-item {
+            a {
+              &.contato {
+                color: #fff;
+              }
+            }
+            &.active {
+              a {
+                &.contato {
+                  color: #fff;
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -1,4 +1,4 @@
-#funciona {
+#como-funciona {
   position: relative;
   min-height: 800px;
   height: 90vh;
@@ -68,7 +68,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  #funciona {
+  #como-funciona {
     .mask {
       &:before {
         bottom: 420px;
@@ -82,7 +82,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  #funciona {
+  #como-funciona {
     height: auto;
     padding: 30px 0;
     .mask {

@@ -4,7 +4,13 @@ export function init_scroll() {
 
   scroll();
   if (width <= 991) {
+    if ($(".nav-link").hasClass("contato")) {
+      $(".logo").attr("data", "./imgs/logo.svg");
+    }
   } else {
+    if ($(".nav-link").hasClass("contato")) {
+      $(".logo").attr("data", "./imgs/logo-2.svg");
+    }
     if (scroll_position > 10) {
       $("header").addClass("scroll");
     } else {
@@ -26,11 +32,17 @@ function scroll() {
       if (scroll > 10) {
         if (scroll_status) {
           $("header").addClass("scroll");
+          if ($(".nav-link").hasClass("contato")) {
+            $(".logo").attr("data", "./imgs/logo.svg");
+          }
         }
         scroll_status = false;
       } else {
         if (!scroll_status) {
           $("header").removeClass("scroll");
+          if ($(".nav-link").hasClass("contato")) {
+            $(".logo").attr("data", "./imgs/logo-2.svg");
+          }
           scroll_status = true;
         }
       }
