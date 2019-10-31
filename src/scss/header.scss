@@ -5,8 +5,11 @@ header {
   width: 100%;
   transition: all 350ms ease-in-out;
   &.scroll {
-    background-color: #161f36;
+    background-color: #f6f6f6;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    .navbar-brand {
+      background-image: url(./imgs/logo-colorido.svg);
+    }
     .navbar {
       .navbar-collapse {
         .navbar-nav {
@@ -17,21 +20,29 @@ header {
             a {
             }
             .phone-before {
+              &:before {
+                background-color: #050f28;
+              }
               &.contato {
                 &:before {
-                  background-color: #fff;
+                  background-color: #050f28;
                 }
               }
             }
           }
           .nav-item {
             a {
+              color: #050f28;
+              &:hover {
+                color: #050f28;
+              }
               &.contato {
                 color: #fff;
               }
             }
             &.active {
               a {
+                color: #050f28;
                 &.contato {
                   color: #fff;
                 }
@@ -46,6 +57,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 152px;
+    height: 32px;
+    background-image: url(./imgs/logo.svg);
     object {
       max-width: 145px;
       pointer-events: none;
