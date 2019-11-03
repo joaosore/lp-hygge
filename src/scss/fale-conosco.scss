@@ -45,7 +45,7 @@
   p {
     max-width: 600px;
     opacity: 0.6;
-    font-family: "Yrsa";
+    font-family: "IBM Plex Sans";
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -84,6 +84,11 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      &.error {
+        input {
+          border: 1px solid red;
+        }
+      }
       label {
         font-family: "IBM Plex Sans";
         font-size: 14px;
@@ -96,6 +101,7 @@
         color: #050f28;
       }
       input {
+        transition: all 350ms ease-in-out;
         width: 100%;
         max-width: 600px;
         height: 50px;

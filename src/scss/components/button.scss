@@ -10,6 +10,8 @@
   max-width: 262px;
   width: 100%;
   transition: all 350ms ease-in-out;
+  text-decoration: none !important;
+
   &:hover {
     background-color: #016ff5;
   }

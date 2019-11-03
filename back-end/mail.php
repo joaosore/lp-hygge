@@ -7,8 +7,6 @@ $dotenv->load();
 
 if($_POST) {
 
-	var_dump($_POST);
-
 	$data = (object) $_POST;
 
 	$email = new \SendGrid\Mail\Mail(); 

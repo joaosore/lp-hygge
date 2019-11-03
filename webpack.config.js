@@ -69,13 +69,6 @@ module.exports = {
         to: "./",
         flatten: true
       }
-    ]),
-    new CopyWebpackPlugin([
-      {
-        from: "src/contato.html",
-        to: "./",
-        flatten: true
-      }
     ])
   ]
 };
