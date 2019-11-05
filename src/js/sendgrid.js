@@ -91,6 +91,14 @@ function get_form() {
     },
     complete: function(response) {
       $(".loading").hide();
+      setTimeout(() => {
+        $("#contato #nome").val(" ");
+        $("#contato #email").val(" ");
+        $("#contato #telefone").val(" ");
+        $("#contato #cpnj").val(" ");
+        $(".mensagem").empty();
+        $(".btn-fale").fadeIn();
+      }, 1750);
     },
     success: function(response) {
       $(".mensagem").html("<p>" + response.mensagem + "</p>");

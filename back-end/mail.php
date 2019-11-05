@@ -20,7 +20,6 @@ if($_POST) {
 		<p><b>Email:</b>$data->email</p>
 		<p><b>Telefone:</b>$data->telefone</p>
 		<p><b>CNPJ:</b>$data->cpnj</p>
-		<p><b>Faturamento:</b>$data->faturamento</p>
 		"
 	);
 	
